@@ -5,6 +5,11 @@ class ProductsController < ApplicationController
     cart << @product.id
   end
 
+  def add
+    cart << params[:product]
+    render :index
+  end
+
   def show
   end
 
