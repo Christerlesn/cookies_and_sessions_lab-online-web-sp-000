@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
 
   def index
-    @product = Product.find_by(params[:id])
+    @product = Product.new
     cart << @product.id
   end
 
